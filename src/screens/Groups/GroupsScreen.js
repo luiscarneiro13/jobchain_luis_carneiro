@@ -1,10 +1,13 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { Text, View } from 'react-native'
+import { useTheme } from 'react-native-paper'
 
 export function GroupsScreen() {
-  <>
-    <View>
+
+  const theme = useTheme()
+
+  return (
+    <View style={theme.content}>
       <Text>Groups Screen</Text>
     </View>
-  </>
+  )
 }

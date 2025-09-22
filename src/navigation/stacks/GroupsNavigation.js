@@ -1,5 +1,5 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack"
-import { GroupsScreen } from "../../screens/Groups"
+import { GroupsScreen } from "../../screens/Groups/GroupsScreen"
 import { screens } from "../../utils"
 import { styles } from "../Styles.styles"
 
