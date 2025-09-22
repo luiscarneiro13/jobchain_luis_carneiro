@@ -154,7 +154,7 @@ export function BuscarScreen() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#f0f0f5',
+    backgroundColor: '#8BB6F2',
   },
   header: {
     flexDirection: 'row',
@@ -210,7 +210,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 15,
   },
   card: {
-    backgroundColor: '#fff',
+    backgroundColor: 'rgba(255, 255, 255, 0.5)', // Fondo blanco con 80% de opacidad
     borderRadius: 20,
     padding: 15,
     marginBottom: 10,
@@ -261,7 +261,7 @@ const styles = StyleSheet.create({
   },
   userType: {
     fontSize: 14,
-    color: '#888',
+    color: '#000',
   },
   priceContainer: {
     alignItems: 'flex-end',
@@ -293,7 +293,7 @@ const styles = StyleSheet.create({
   locationText: {
     marginLeft: 5,
     fontSize: 14,
-    color: '#888',
+    color: '#000',
   },
   filterIcon: {
     marginLeft: 'auto',
