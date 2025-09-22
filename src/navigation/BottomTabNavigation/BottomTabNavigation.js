@@ -1,9 +1,9 @@
 import { View } from "react-native"
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs"
-import { Icon } from 'react-native-paper'
 import { ChatsNavigation, GroupsNavigation, SettingsNavigation } from "../stacks"
 import { screens } from "../../utils"
 import { styles } from "./BottomTabNavigation.styles"
+import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const Tab = createBottomTabNavigator()
 
@@ -11,8 +11,8 @@ export function BottomTabNavigation() {
     return (
         <Tab.Navigator screenOptions={screenOptionsConfig}>
             <Tab.Screen name={screens.tab.chats.root} component={ChatsNavigation} options={{ title: "Chats" }} />
-            {/* <Tab.Screen name={screens.tab.groups.root} component={GroupsNavigation} options={{ title: "Grupos" }} />
-            <Tab.Screen name={screens.tab.settings.root} component={SettingsNavigation} options={{ title: "Ajustes" }} /> */}
+            <Tab.Screen name={screens.tab.groups.root} component={GroupsNavigation} options={{ title: "Grupos" }} />
+            {/* <Tab.Screen name={screens.tab.settings.root} component={SettingsNavigation} options={{ title: "Ajustes" }} /> */}
         </Tab.Navigator>
     )
 }
@@ -28,7 +28,7 @@ function screenIcon(route, color, size, focused) {
     let iconName
 
     if (route.name === screens.tab.chats.root) {
-        iconName = "chat"
+        iconName = "home"
     }
 
     if (route.name === screens.tab.groups.root) {

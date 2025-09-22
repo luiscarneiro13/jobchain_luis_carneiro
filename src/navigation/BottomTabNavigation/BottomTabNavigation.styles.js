@@ -10,10 +10,10 @@ export const styles = new StyleSheet.create({
         shadowRadius: 6,
         elevation: 6 // Para Android
     },
-    tabBarLabelStyle: {
-        color: "#333",
-        fontSize: 14,
-        fontWeight: "bold"
+     tabBarLabelStyle: {
+      fontSize: 16,
+      fontFamily: 'Georgia',
+      fontWeight: 300,
     },
     circleBackground: {
         backgroundColor: "#deffe8", // Color verde WhatsApp
