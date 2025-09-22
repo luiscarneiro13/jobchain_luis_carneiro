@@ -38,6 +38,30 @@ const settings = {
 }
 
 
+
+
+// Esto es un tab
+const inicio = {
+    root: "InicioRoot",
+}
+// Esto es un tab
+const billetera = {
+    root: "BilleteraRoot",
+}
+// Esto es un tab
+const buscar = {
+    root: "BuscarRoot",
+}
+// Esto es un tab
+const notificaciones = {
+    root: "NotificacionesRoot",
+}
+// Esto es un tab
+const mensajes = {
+    root: "MensajesRoot",
+}
+
+
 export const screens = {
     auth,
     global,
@@ -46,5 +70,10 @@ export const screens = {
         chats,
         groups,
         settings,
+        inicio,
+        billetera,
+        buscar,
+        notificaciones,
+        mensajes,
     }
 }

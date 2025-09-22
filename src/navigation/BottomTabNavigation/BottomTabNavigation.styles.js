@@ -5,29 +5,36 @@ export const styles = new StyleSheet.create({
         position: 'absolute',
         left: 16,
         right: 16,
-        backgroundColor: '#fff',
-        borderRadius: 12,
-        borderTopWidth: 0,
-        elevation: 6,
-        shadowColor: '#333',
-        shadowOffset: { width: 0, height: 4 },
-        shadowOpacity: 0.3,
-        shadowRadius: 6,
-        height: 70, // 👈 aumenta la altura para acomodar íconos + texto
-        paddingBottom: 8, // 👈 da espacio interno para evitar cortes
+        height: 80,
+        backgroundColor: '#E1E9FB',
+        elevation: 10,
+        shadowColor: '#000',
+        shadowOffset: { width: 0, height: 6 },
+        shadowOpacity: 0.15,
+        shadowRadius: 10,
         zIndex: 10,
     },
-    tabBarLabelStyle: {
-        fontSize: 16,
-        fontFamily: 'Georgia',
-        fontWeight: 300,
+    tabBarItemStyle: {
+        alignItems: 'center',
+        justifyContent: 'center',
     },
-    circleBackground: {
-        backgroundColor: "#aab8f3ff", // Color verde WhatsApp
-        width: 60, // Mayor ancho para el efecto ovalado
-        height: 30, // Menor altura
-        borderRadius: 25, // Mantiene bordes redondeados
-        justifyContent: "center",
-        alignItems: "center",
-    }
+    tabBarLabelStyle: {
+        fontSize: 12,
+        color: '#88a',
+        marginTop: 4,
+        textAlign: 'center',
+        includeFontPadding: false,
+        fontFamily: Platform.OS === 'android' ? 'sans-serif' : 'System',
+    },
+    iconWrapper: {
+        width: 40,
+        height: 40,
+        borderRadius: 20,
+        backgroundColor: 'transparent',
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    activeIconWrapper: {
+        backgroundColor: '#e0d6ff',
+    },
 })
