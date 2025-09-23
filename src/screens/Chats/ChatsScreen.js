@@ -36,7 +36,7 @@ export function ChatsScreen() {
     const borderColor = hasError ? '#FF6B6B' : (isFocused ? '#7F5AF0' : '#1D1C47');
     const textColor = hasError ? '#FF6B6B' : 'white';
     const labelColor = hasError ? '#FF6B6B' : '#8B6EE7';
-    const inputBgColor = hasError ? '#fff' : '#fff';
+    const inputBgColor = hasError ? '#fff' : '#141534';
     const iconBgColor = hasError ? '#30305e' : '#30305e';
 
     return (
@@ -48,7 +48,7 @@ export function ChatsScreen() {
                 ]}
             >
                 {(isFocused || hasError) && (
-                    <Text style={[styles.inputLabel, { color: labelColor, backgroundColor: inputBgColor }]}>
+                    <Text style={[styles.inputLabel, { color: labelColor, backgroundColor: 'transparent' }]}>
                         {hasError ? 'Correo electrónico incorrecto' : 'Correo electrónico'}
                     </Text>
                 )}
