@@ -22,7 +22,7 @@ export function BottomTabNavigation() {
         component={ChatsNavigation}
         options={{ title: 'Inicio' }}
       />
-      <Tab.Screen
+      {/* <Tab.Screen
         name={screens.tab.billetera.root}
         component={GroupsNavigation}
         options={{ title: 'Historia' }}
@@ -41,7 +41,7 @@ export function BottomTabNavigation() {
         name={screens.tab.mensajes.root}
         component={NullScreen}
         options={{ title: 'Mensajes' }}
-      />
+      /> */}
     </Tab.Navigator>
   );
 }
