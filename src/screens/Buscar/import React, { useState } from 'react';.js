@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { View, Text, StyleSheet, TextInput, Pressable } from 'react-native';
+import { View, Text, StyleSheet, TextInput, Pressable, Alert } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 export function ChatsScreen() {
@@ -24,6 +24,7 @@ export function ChatsScreen() {
 
     // Valida el correo electrónico al salir del campo
     const handleBlur = () => {
+        Alert.alert("Luis")
         setIsFocused(false);
         if (email.length > 0) {
             setHasError(!validateEmail(email));
@@ -59,7 +60,7 @@ export function ChatsScreen() {
                     autoCapitalize="none"
                     placeholderTextColor={hasError ? '#FF6B6B' : '#54537C'}
                     onFocus={() => setIsFocused(true)}
-                    onBlur={(text) => handleBlur(tex)}
+                    onBlur={(text) => handleBlur(text)}
                     value={email}
                     onChangeText={handleTextChange}
                 />
